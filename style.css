@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.body{
+	position: relative;
+}
+
+nav{
+	height: 8vh;
+}
+
+.main{
+	width: 100vw;
+	position: relative;
+}
+
+.main .slide1{
+	/*width: 100%;*/
+	background-image:url("images/image001.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	padding: 20%;
+	text-align: center;
+	color: #289571;
+	/*color: white;*/
+	font-family: urbanist;
+	font-size: 150%;
+}
+.main .slide1 h2{
+	border: 2px solid #289571;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*slide 2*/
+.form{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	padding: 10% 0;
+	text-align: center;
+}
+.form input{
+	padding: 4% 7%;
+	text-align: center;
+	font-size: 100%;
+	border-radius: 5px;
+	margin: 5% 0;
+}
+.form #num-in{
+	outline: 1px solid transparent;
+	border: none;
+}
+.form #num-in:focus{
+	outline: 1px solid #0747F4;
+}
+.form #btn-in{
+	background-color: #2B9C71;
+	border: none;
+	outline: none;
+} 
+.form #btn-in:active{
+
+	background-color: #32B381;
+	color: white;
+}
