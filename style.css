@@ -10,8 +10,26 @@
 	position: relative;
 }
 
+
+/*nav*/
 nav{
 	height: 8vh;
+	position: relative;
+}
+
+nav .nav-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: grid;
+	grid-template-columns: repeat(3, 30vw);
+	justify-content: space-around;
+}
+
+nav .nav-container  a{
+	font-family: urbanist;
+	color: #25865F;
 }
 
 .main{
@@ -20,14 +38,12 @@ nav{
 }
 
 .main .slide1{
-	/*width: 100%;*/
 	background-image:url("images/image001.jpg");
 	background-size: cover;
 	background-repeat: repeat;
 	padding: 20%;
 	text-align: center;
 	color: #289571;
-	/*color: white;*/
 	font-family: urbanist;
 	font-size: 150%;
 }
@@ -67,4 +83,9 @@ nav{
 
 	background-color: #32B381;
 	color: white;
+}
+
+
+.login{
+	position: absolute;
 }
