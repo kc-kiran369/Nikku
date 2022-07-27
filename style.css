@@ -4,13 +4,8 @@
 	text-decoration: none;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: Urbanist;
 }
-
-.body{
-	position: relative;
-}
-
-
 /*nav*/
 nav{
 	height: 8vh;
@@ -23,12 +18,11 @@ nav .nav-container{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: grid;
-	grid-template-columns: repeat(3, 30vw);
+	/*grid-template-columns: repeat(3, 30vw);*/
 	justify-content: space-around;
 }
 
 nav .nav-container  a{
-	font-family: urbanist;
 	color: #25865F;
 }
 
@@ -38,7 +32,7 @@ nav .nav-container  a{
 }
 
 .main .slide1{
-	background-image:url("images/image001.jpg");
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("images/image001.jpg");
 	background-size: cover;
 	background-repeat: repeat;
 	padding: 20%;
@@ -48,38 +42,47 @@ nav .nav-container  a{
 	font-size: 150%;
 }
 .main .slide1 h2{
-	border: 2px solid #289571;
-	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
 }
 
 /*slide 2*/
 .form{
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%,0);
+	width: 100%;
 	padding: 10% 0;
 	text-align: center;
+	position: relative;
+	/*background-color: palevioletred;*/
+	height: 30vh;
 }
-.form input{
+.form .form-container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 40%;
+	/*background-color: indianred;*/
+}
+.form .form-container input{
 	padding: 4% 7%;
 	text-align: center;
 	font-size: 100%;
 	border-radius: 5px;
 	margin: 5% 0;
+	width: 70%;
 }
-.form #num-in{
+.form .form-container #num-in{
 	outline: 1px solid transparent;
 	border: none;
 }
-.form #num-in:focus{
+.form .form-container #num-in:focus{
 	outline: 1px solid #0747F4;
 }
-.form #btn-in{
+.form .form-container #btn-in{
 	background-color: #2B9C71;
 	border: none;
 	outline: none;
 } 
-.form #btn-in:active{
+.form .form-container #btn-in:active{
 
 	background-color: #32B381;
 	color: white;
@@ -87,5 +90,46 @@ nav .nav-container  a{
 
 
 .login{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	background-color: rgba(200, 200, 200, 1.0);
+	height: 40vh;
+	display: grid;
+	grid-auto-columns: repeat(2,auto);
+}
+.login #title{
+	background-color: #3B589A;
+	color: white;
+	padding: 3% 0;
+}
+.login .login-container{
 	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%,-50%);
+	width: 90%;
+	padding: 2% 1%;
+	color: #94979E;
+}
+.login .login-container img,.login .login-container h4{
+	margin: 3% 0;
+}
+.login .login-container img{
+	border-radius: 15%;
+	width:15%;
+}
+.login .login-container input{
+	padding: 2% 7%;
+	text-align: center;
+	font-size: 100%;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	margin: 1% 0;
+	width: 70%;
+}
+.login .login-container #login-btn{
+	background-color: #1A78F4;
+	color: white;
 }
