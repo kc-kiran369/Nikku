@@ -48,7 +48,6 @@ nav .nav-container  a{
 /*slide 2*/
 .form{
 	width: 100%;
-	padding: 10% 0;
 	text-align: center;
 	position: relative;
 	/*background-color: palevioletred;*/
@@ -61,6 +60,12 @@ nav .nav-container  a{
 	transform: translate(-50%,-50%);
 	width: 40%;
 	/*background-color: indianred;*/
+}
+@media screen and (min-width: 500px)
+{
+	.form{
+	height: 50vh;
+	}
 }
 .form .form-container input{
 	padding: 4% 7%;
@@ -94,10 +99,15 @@ nav .nav-container  a{
 	text-align: center;
 	position: relative;
 	background-color: rgba(200, 200, 200, 1.0);
-	height: 40vh;
-	display: grid;
-	grid-auto-columns: repeat(2,auto);
+	height: 70vh;
+	/*display: flex;*/
+	/*grid-template-rows: repeat(2, auto);*/
 }
+.login #title-holder{
+	/*background-color: burlywood;*/
+	/*height: 15%;*/
+}
+
 .login #title{
 	background-color: #3B589A;
 	color: white;
@@ -106,10 +116,11 @@ nav .nav-container  a{
 .login .login-container{
 	position: absolute;
 	left: 50%;
-	top: 60%;
-	transform: translate(-50%,-50%);
+	/*top: 70%;*/
+	transform: translate(-50%,0);
 	width: 90%;
-	padding: 2% 1%;
+	/*height: 60%;*/
+	/*padding: 2% 1%;*/
 	color: #94979E;
 }
 .login .login-container img,.login .login-container h4{
