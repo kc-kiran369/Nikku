@@ -67,7 +67,7 @@ nav .nav-container  a{
 	height: 50vh;
 	}
 }
-.form .form-container input{
+.form .form-container input,.form .form-container a{
 	padding: 4% 7%;
 	text-align: center;
 	font-size: 100%;
@@ -75,22 +75,23 @@ nav .nav-container  a{
 	margin: 5% 0;
 	width: 70%;
 }
-.form .form-container #num-in{
+.form .form-container #num-in,.form .form-container #uid-id{
 	outline: 1px solid transparent;
 	border: none;
 }
-.form .form-container #num-in:focus{
+.form .form-container #num-in,.form .form-container #uid-id:focus{
 	outline: 1px solid #0747F4;
 }
 .form .form-container #btn-in{
 	background-color: #2B9C71;
 	border: none;
 	outline: none;
+	color: white;
 } 
 .form .form-container #btn-in:active{
 
 	background-color: #32B381;
-	color: white;
+	
 }
 
 
@@ -119,8 +120,6 @@ nav .nav-container  a{
 	/*top: 70%;*/
 	transform: translate(-50%,0);
 	width: 90%;
-	/*height: 60%;*/
-	/*padding: 2% 1%;*/
 	color: #94979E;
 }
 .login .login-container img,.login .login-container h4{
@@ -142,5 +141,37 @@ nav .nav-container  a{
 }
 .login .login-container #login-btn{
 	background-color: #1A78F4;
+	color: white;
+}
+
+
+
+#pop-up{
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	color: black;
+	background-color: white;
+	border-radius: 5%;
+	z-index: 10;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#pop-up .container{
+	padding: 10% 2%;
+}
+#pop-up .elements{
+	padding: 5% 10%;
+	border-radius: 5px;
+}
+#pop-up #btn{
+	width: 90%;
+	background-color: #63b645;
+	outline: none;
+	border: none;
+}
+#pop-up #btn:hover{
 	color: white;
 }
