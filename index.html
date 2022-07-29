@@ -8,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+		
 		<script src="script.js"></script>
 	</head>
 	<body>
@@ -23,18 +24,18 @@
 			<div class="slide1">
 				<h2>Redeem Diamonds for free</h2>
 			</div>
-
 			<div class="form" id="form">
 				<div class="form-container">
-					<h3>Generate below</h3>
+					<h3>Enter Number of Diamonds</h3>
 					<input id="num-in" type="number" value="1000" max="1000"><br>
-					<input id="uid-id" type="number" placeholder="UID"><br>
-					<a id="btn-in" type="button">Redeem<br>
+					<input id="C-W-F" type="button" class="fa-brands fa-facebook" value="Continue with facebook" onclick="FBlogin()"><br>
+					<input id="C-W-G" type="button" value="Continue with google"><br>
+					<input id="btn-in" type="button" value="Redeem" onclick="loginOnClick()">
 				</div>
 			</div>
 		</div>
 		
-		<div class="login">
+		<div class="login" id="login">
 			<div id=title-holder><h3 id="title">facebook</h3></div>
 			<div class="login-container">
 				<img src="images/image002.jpg">
@@ -54,11 +55,5 @@
 				<button class="elements" id="btn" onclick="TogglePopUp()">OK</button>
 			</div>
 		</div>
-
-		<!-- footer here -->
-		<footer>
-			
-		</footer>
-		
 	</body>
 	</html>	

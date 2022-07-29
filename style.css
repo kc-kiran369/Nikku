@@ -7,6 +7,7 @@
 	font-family: Urbanist;
 }
 /*nav*/
+
 nav{
 	height: 8vh;
 	position: relative;
@@ -36,6 +37,7 @@ nav .nav-container  a{
 	background-size: cover;
 	background-repeat: repeat;
 	padding: 20%;
+	overflow: hidden;
 	text-align: center;
 	color: #289571;
 	font-family: urbanist;
@@ -50,36 +52,32 @@ nav .nav-container  a{
 	width: 100%;
 	text-align: center;
 	position: relative;
-	/*background-color: palevioletred;*/
-	height: 30vh;
+	height: 50vh;
 }
 .form .form-container{
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 40%;
-	/*background-color: indianred;*/
+	width: 70%;
 }
-@media screen and (min-width: 500px)
+/*@media screen and (min-width: 500px)
 {
 	.form{
 	height: 50vh;
 	}
-}
-.form .form-container input,.form .form-container a{
+}*/
+.form .form-container input{
 	padding: 4% 7%;
 	text-align: center;
 	font-size: 100%;
 	border-radius: 5px;
 	margin: 5% 0;
-	width: 70%;
-}
-.form .form-container #num-in,.form .form-container #uid-id{
-	outline: 1px solid transparent;
+	width: 100%;
+	outline: 1px solid gray;
 	border: none;
 }
-.form .form-container #num-in,.form .form-container #uid-id:focus{
+.form .form-container input:focus{
 	outline: 1px solid #0747F4;
 }
 .form .form-container #btn-in{
@@ -96,11 +94,15 @@ nav .nav-container  a{
 
 
 .login{
-	width: 100%;
+	width: 90%;
 	text-align: center;
-	position: relative;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	background-color: rgba(200, 200, 200, 1.0);
 	height: 70vh;
+	display: none;
 }
 .login #title{
 	background-color: #3B589A;
