@@ -101,14 +101,7 @@ nav .nav-container  a{
 	position: relative;
 	background-color: rgba(200, 200, 200, 1.0);
 	height: 70vh;
-	/*display: flex;*/
-	/*grid-template-rows: repeat(2, auto);*/
 }
-.login #title-holder{
-	/*background-color: burlywood;*/
-	/*height: 15%;*/
-}
-
 .login #title{
 	background-color: #3B589A;
 	color: white;

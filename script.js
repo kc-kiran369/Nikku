@@ -9,7 +9,7 @@ function loginOnClick() {
 	{
 		ERROR("Please enter number of diamonds and your UID");
 	}
-	else if(!phoneno || password)
+	else if(!phoneno || !password)
 	{
 		ERROR("Please enter valid phone no or password");
 	}
