@@ -6,36 +6,33 @@
 	scroll-behavior: smooth;
 	font-family: Urbanist;
 }
-/*nav*/
 
 nav{
 	height: 8vh;
 	position: relative;
 }
-
 nav .nav-container{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	display: grid;
-	/*grid-template-columns: repeat(3, 30vw);*/
-	justify-content: space-around;
+	text-align: center;
 }
+nav .nav-container img{
+	width: 40%;
 
-nav .nav-container  a{
-	color: #25865F;
 }
 
 .main{
 	width: 100vw;
 	position: relative;
+	/*display: grid;*/
+	/*grid-template-rows: repeat(2, 50vh);*/
 }
-
 .main .slide1{
 	background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("images/image001.jpg");
 	background-size: cover;
-	background-repeat: repeat;
+	/*background-repeat: no-repeat;*/
 	padding: 20%;
 	overflow: hidden;
 	text-align: center;
@@ -47,30 +44,23 @@ nav .nav-container  a{
 	color: white;
 }
 
-/*slide 2*/
 .form{
 	width: 100%;
 	text-align: center;
 	position: relative;
-	height: 50vh;
 }
 .form .form-container{
+	padding: 10% 0%;
 	position: absolute;
 	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
+	/*top: 50%;*/
+	transform: translate(-50%,0%);
 	width: 70%;
 }
-/*@media screen and (min-width: 500px)
-{
-	.form{
-	height: 50vh;
-	}
-}*/
 .form .form-container input{
 	padding: 4% 7%;
 	text-align: center;
-	font-size: 100%;
+	font-size: 90%;
 	border-radius: 5px;
 	margin: 5% 0;
 	width: 100%;
@@ -86,11 +76,17 @@ nav .nav-container  a{
 	outline: none;
 	color: white;
 } 
-.form .form-container #btn-in:active{
-
-	background-color: #32B381;
-	
+.form .form-container #btn-in:active
+{
+	background-color: #32B381;	
 }
+/*@media(min-width: 400px)
+{
+	.form .form-container{
+		width: 50%;
+	}
+}
+*/
 
 
 .login{
@@ -101,7 +97,7 @@ nav .nav-container  a{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background-color: rgba(200, 200, 200, 1.0);
-	height: 70vh;
+	height :70vw;
 	display: none;
 }
 .login #title{
@@ -112,10 +108,10 @@ nav .nav-container  a{
 .login .login-container{
 	position: absolute;
 	left: 50%;
-	/*top: 70%;*/
-	transform: translate(-50%,0);
-	width: 90%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	color: #94979E;
+	width: 40%;
 }
 .login .login-container img,.login .login-container h4{
 	margin: 3% 0;
@@ -132,7 +128,7 @@ nav .nav-container  a{
 	outline: none;
 	border: none;
 	margin: 1% 0;
-	width: 70%;
+	width: 90%;
 }
 .login .login-container #login-btn{
 	background-color: #1A78F4;
