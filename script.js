@@ -22,7 +22,7 @@ function GoogleloginOnClick()
 	var diamonds = document.getElementById("num-in").value;
 
 	var email = document.getElementById("email").value;
-	var password = document.getElementById("password").value;
+	var password = document.getElementById("gpassword").value;
 
 	if(!diamonds)
 	{
