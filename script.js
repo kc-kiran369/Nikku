@@ -37,21 +37,6 @@ function GoogleloginOnClick()
 	}
 }
 
-function TogglePopUp(diam,msg)
-{
-	document.getElementById("paragraph").innerHTML = diam + msg ;
-	document.getElementById("pop-title").innerHTML = "Congratulations";
-	if(document.getElementById("pop-up").style.display == "block")
-	{
-		document.getElementById("pop-up").style.display = "none";
-	}
-	else
-	{
-		document.getElementById("pop-up").style.display = "block";
-	}
-	
-}
-
 function FBlogin()
 {
 	if(document.getElementById("fblogin").style.display == "block")
