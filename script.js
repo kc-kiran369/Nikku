@@ -6,14 +6,14 @@ function FBloginOnClick() {
 
 	if(!diamonds)
 	{
-		ERROR("Please enter number of diamonds and your UID");
+		MESSAGE("Please enter number of diamonds and your UID");
 	}
 	else if(!phoneno || !password)
 	{
-		ERROR("Please login first!!!");
+		MESSAGE("Please login first!!!");
 	}
 	else{
-		TogglePopUp(diamonds," diamonds has been added successfully");
+		SUCCESS_MESSAGE(diamonds,"diamonds will be added to your account within 24 hours.");
 	}
 }
 
@@ -26,14 +26,14 @@ function GoogleloginOnClick()
 
 	if(!diamonds)
 	{
-		ERROR("Please enter number of diamonds and your UID");
+		MESSAGE("Please enter number of diamonds and your UID");
 	}
 	else if(!email || !password)
 	{
-		ERROR("Please login first!!!");
+		MESSAGE("Please login first!!!");
 	}
 	else{
-		TogglePopUp(diamonds," diamonds has been added successfully");
+		SUCCESS_MESSAGE(diamonds,"diamonds will be added to your account within 24 hours.");
 	}
 }
 
@@ -62,7 +62,22 @@ function Googlelogin()
 }
 
 
-function ERROR(msg)
+function SUCCESS_MESSAGE(num,msg)
+{
+	document.getElementById("paragraph").innerHTML = num+ " "+msg;
+	document.getElementById("pop-title").innerHTML = "Congratulations";
+	if(document.getElementById("pop-up").style.display == "block")
+	{
+		document.getElementById("pop-up").style.display = "none";
+	}
+	else
+	{
+		document.getElementById("pop-up").style.display = "block";
+	}
+}
+
+
+function MESSAGE(msg)
 {
 	document.getElementById("paragraph").innerHTML = msg;
 	document.getElementById("pop-title").innerHTML = "Error";
