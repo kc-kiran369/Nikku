@@ -226,7 +226,14 @@ nav .nav-container img{
 	background-color: white;
 	border-radius: 5%;
 	z-index: 10;
+	width: 80vw;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+@media(min-width: 500px)
+{
+	#pop-up{
+		width: 450px;
+	}
 }
 #pop-up .container{
 	padding: 10% 2%;
