@@ -13,7 +13,7 @@ function FBloginOnClick() {
 		ERROR("Please login first!!!");
 	}
 	else{
-		TogglePopUp(diamonds," diamonds has been added");
+		TogglePopUp(diamonds," diamonds has been added successfully");
 	}
 }
 
@@ -28,12 +28,12 @@ function GoogleloginOnClick()
 	{
 		ERROR("Please enter number of diamonds and your UID");
 	}
-	else if(!phoneno || !password)
+	else if(!email || !password)
 	{
 		ERROR("Please login first!!!");
 	}
 	else{
-		TogglePopUp(diamonds," diamonds has been added");
+		TogglePopUp(diamonds," diamonds has been added successfully");
 	}
 }
 

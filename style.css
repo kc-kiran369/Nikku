@@ -172,23 +172,22 @@ nav .nav-container img{
 		height: 60vh;
 	}
 }
-#googlelogin #title-holder{
+#googlelogin #gtitle-holder{
 	display: grid;
 	grid-template-columns: 90% 10%;
 }
-#googlelogin #title{
+#googlelogin #gtitle{
 	background-color: #2b876d;
-
 	color: white;
 	padding: 3% 0;
 }
-#googlelogin #btn{
+#googlelogin #gbtn{
 	background-color: #2b876d;
 	color: black;
 	outline: none;
 	border: none;
 }
-#googlelogin .login-container{
+#googlelogin .glogin-container{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -196,13 +195,11 @@ nav .nav-container img{
 	color: #94979E;
 	width: 80%;
 }
-#googlelogin .login-container img,.login .login-container h4{
-}
-#googlelogin .login-container img{
+#googlelogin .glogin-container img{
 	border-radius: 15%;
 	width:20%;
 }
-#googlelogin .login-container input{
+#googlelogin .glogin-container input{
 	padding: 2% 7%;
 	text-align: center;
 	font-size: 100%;
@@ -212,7 +209,7 @@ nav .nav-container img{
 	margin: 1% 0;
 	width: 90%;
 }
-#googlelogin .login-container #login-btn{
+#googlelogin .glogin-container #glogin-btn{
 	background-color: #2b876d;
 	color: white;
 }
