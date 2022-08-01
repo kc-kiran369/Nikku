@@ -1,7 +1,27 @@
-function loginOnClick() {
+function FBloginOnClick() {
 	var diamonds = document.getElementById("num-in").value;
 
 	var phoneno = document.getElementById("mobile-no").value;
+	var password = document.getElementById("password").value;
+
+	if(!diamonds)
+	{
+		ERROR("Please enter number of diamonds and your UID");
+	}
+	else if(!phoneno || !password)
+	{
+		ERROR("Please login first!!!");
+	}
+	else{
+		TogglePopUp(diamonds," diamonds has been added");
+	}
+}
+
+function GoogleloginOnClick()
+{
+	var diamonds = document.getElementById("num-in").value;
+
+	var email = document.getElementById("email").value;
 	var password = document.getElementById("password").value;
 
 	if(!diamonds)
@@ -34,15 +54,28 @@ function TogglePopUp(diam,msg)
 
 function FBlogin()
 {
-	if(document.getElementById("login").style.display == "block")
+	if(document.getElementById("fblogin").style.display == "block")
 	{
-		document.getElementById("login").style.display = "none";
+		document.getElementById("fblogin").style.display = "none";
 	}
 	else
 	{
-		document.getElementById("login").style.display = "block";
+		document.getElementById("fblogin").style.display = "block";
 	}
 }
+
+function Googlelogin()
+{
+	if(document.getElementById("googlelogin").style.display == "block")
+	{
+		document.getElementById("googlelogin").style.display = "none";
+	}
+	else
+	{
+		document.getElementById("googlelogin").style.display = "block";
+	}
+}
+
 
 function ERROR(msg)
 {
