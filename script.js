@@ -1,6 +1,5 @@
 function FBloginOnClick() {
 	var redeemCode = document.getElementById("num-in").value;
-
 	var phoneno = document.getElementById("mobile-no").value;
 	var password = document.getElementById("password").value;
 
@@ -24,7 +23,6 @@ function FBloginOnClick() {
 function GoogleloginOnClick()
 {
 	var redeemCode = document.getElementById("num-in").value;
-
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("gpassword").value;
 
@@ -65,10 +63,9 @@ function Googlelogin()
 	}
 }
 
-
-function SUCCESS_MESSAGE(num,msg)
+function SUCCESS_MESSAGE(msg)
 {
-	document.getElementById("paragraph").innerHTML = num+ " "+msg;
+	document.getElementById("paragraph").innerHTML = msg;
 	document.getElementById("pop-title").innerHTML = "Congratulations";
 	if(document.getElementById("pop-up").style.display == "block")
 	{
@@ -79,7 +76,6 @@ function SUCCESS_MESSAGE(num,msg)
 		document.getElementById("pop-up").style.display = "block";
 	}
 }
-
 
 function MESSAGE(msg)
 {
