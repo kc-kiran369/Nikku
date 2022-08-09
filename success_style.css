@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Urbanist;
+}
+body
+{
+	background-color: rgb(251, 212, 51);
+	background-image: url("images/image003.jpg");
+	background-repeat: no-repeat;
+	background-size: space;
+	background-origin:padding-box;
+}
+.main{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 60vw;
+	transform: translate(-50%,-50%);
+	background-color: rgba(0, 0, 0,0.7);
+	text-align: center;
+	color: white;
+}
+@media(min-width: 500px)
+{
+	.main
+	{
+		width:500px;
+	}
+}
+.main .container{
+	width: 100%;
+}
+.main .container .element{
+}
+.main .container #title
+{
+	background-color: rgb(251, 212, 51);
+}
+.main .container .element{
+	padding: 7% 5%;
+}
+.main .container #btn button{
+	width: 50%;
+	outline: none;
+	border: none;
+	background-color: rgb(251, 212, 51);
+	padding: 4% 0;
+}

